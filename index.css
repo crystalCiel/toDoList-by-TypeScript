@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202124;
+    color: white;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 850px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  .container {
+    width: 500px;
+    min-height: 90vh;
+    border: gainsboro 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  @media screen and (max-width: 500px) {
+    .container {
+      width: 100%;
+    }
+  }
+  .container > .inputArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+  }
+  .container > .inputArea > #newTodoItem {
+    height: 25px;
+    width: 80%;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  @media screen and (max-width: 500px) {
+    .container > .inputArea > #newTodoItem {
+      height: 35px;
+      width: 75%;
+      font-size: 16px;
+    }
+  }
+  
+  .undone.clickUndown {
+    display: none;
+  }
+  
+  .done.clickDown {
+    display: none;
+  }
+  
+  .todoList {
+    display: flex;
+    margin: 10px 0;
+  }
+  .todoList > .checkbox {
+    width: 18px;
+    height: 18px;
+  }
+  @media screen and (max-width: 500px) {
+    .todoList > .checkbox {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  .textItem {
+    max-width: 60%;
+    word-break: break-all;
+    margin: 0 10px;
+  }
+  .textItem.complete {
+    text-decoration: line-through;
+  }
+  @media screen and (max-width: 500px) {
+    .textItem {
+      max-width: 40%;
+    }
+  }
+  @media screen and (max-width: 361px) {
+    .textItem {
+      max-width: 35%;
+    }
+  }
+  
+  .subtotal {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+  }
+  
+  .totalLabel {
+    box-sizing: border-box;
+    margin: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  button {
+    width: 50px;
+    height: 30px;
+    border: gainsboro 1px solid;
+    border-radius: 10px;
+    background-color: inherit;
+    color: gainsboro;
+    margin: 0 5px;
+    font-size: 18px;
+    outline: 0;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 500px) {
+    button {
+      height: 40px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    button {
+      width: 70px;
+      font-size: 16px;
+    }
+  }
+  
+  input {
+    width: 65%;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+  }
+  @media screen and (max-width: 500px) {
+    input {
+      font-size: 16px;
+      width: 45%;
+    }
+  }
+  
+  /*# sourceMappingURL=todoList.css.map */
